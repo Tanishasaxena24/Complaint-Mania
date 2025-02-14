@@ -7,12 +7,6 @@ const { adminRoute } = require('../middleware/protectedRoutes.js');
 
 
 
-
-
-
-
-
-
 // Define the route to get all users
 routerUser.get('/users',adminRoute, (req, res) => {
   const query = 'SELECT name,email FROM users';
@@ -25,11 +19,6 @@ routerUser.get('/users',adminRoute, (req, res) => {
     res.json(results);
   });
 });
-
-
-
-
-
 
 
 
@@ -56,15 +45,6 @@ function generateUnique4DigitNumber() {
 
   return uniqueNumber;
 }
-
-
-
-
-
-
-
-
-
 
 
 

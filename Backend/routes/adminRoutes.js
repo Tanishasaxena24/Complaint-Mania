@@ -50,13 +50,6 @@ routerAdmin.post('/admin', async (req, res) => {
 
 
 
-
-
-
-
-
-
-
 // Admin login route
 routerAdmin.post('/admin/login', (req, res) => {
   const { email, password } = req.body;

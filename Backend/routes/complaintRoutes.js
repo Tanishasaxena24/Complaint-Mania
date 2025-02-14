@@ -16,9 +16,6 @@ routerComplaint.get('/complaint',adminRoute,(req, res) => {
   });
 });
 
-
-
-
 // Generating a unique id for users
 function generateUnique4DigitNumber() {
   const year = 2024;
@@ -42,8 +39,6 @@ function generateUnique4DigitNumber() {
 
   return uniqueNumber;
 }
-
-
 
 
 // Route to insert a new admin

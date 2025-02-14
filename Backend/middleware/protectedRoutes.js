@@ -29,7 +29,7 @@ const protectRoute = async (req, res, next) => {
         return res.status(404).json({ error: 'User not found' });
       }
 
-      // Assuming you want to pass the user's name and email to the next middleware
+      //  pass the user's name and email to the next middleware
       req.user = {
         name: results[0].name,
         email: results[0].email
@@ -74,7 +74,7 @@ const adminRoute = async (req, res, next) => {
         return res.status(404).json({ error: 'Admin not found' });
       }
 
-      // Assuming you want to pass the admin's name and email to the next middleware
+      // pass the admin's name and email to the next middleware
       req.admin = {
         name: results[0].name,
         email: results[0].email
